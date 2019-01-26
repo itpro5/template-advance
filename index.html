@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <title>IT Pro5 - Portfolio Page</title>
+</head>
+<body>
+    
+    <header class="w3-container w3-card w3-cell-row w3-light-gray w3-top">
+        <div class="w3-cell w3-reds w3-cell-middle w3-halfs w3-rights">
+            <a href="#" class="w3-xxlarge w3-button w3-hover-none">IT Pro5</a>
+        </div>
+        <div class="w3-cell w3-cell-middle w3-xlarge w3-center w3-blues">
+            <nav class="w3-bar w3-oranges w3-right">
+                <a href="#portfolio" class="w3-bar-item w3-button w3-rights w3-larges w3-hide-medium w3-hide-small">portfolio</a>                
+                <a href="#about" class="w3-bar-item w3-button w3-rights w3-larges w3-hide-medium w3-hide-small">about</a>
+                <a href="#personal_project" class="w3-bar-item w3-button w3-rights w3-larges w3-hide-medium w3-hide-small">projects</a>
+                <a href="#personal_course" class="w3-bar-item w3-button w3-rights w3-larges w3-hide-medium w3-hide-small">courses</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-rights w3-larges w3-hide-medium w3-hide-small">contact</a>
+                <a class="w3-bar-item w3-button w3-rights w3-large w3-hide-large"
+                    href="javascript:void(0)"
+                    onclick="show_hidden_menu()">
+                    <i id="menu-icon" class="material-icons">menu</i>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <nav id="hidden_menu" class="w3-bar-block w3-light-grey w3-hide-large w3-hide">
+        <a href="#portfolio" onclick="show_hidden_menu()" class="w3-bar-item w3-button">portfolio</a>
+        <a href="#about" onclick="show_hidden_menu()" class="w3-bar-item w3-button">about</a>
+        <a href="#personal_project" onclick="show_hidden_menu()" class="w3-bar-item w3-button">projects</a>
+        <a href="#personal_course" onclick="show_hidden_menu()" class="w3-bar-item w3-button">courses</a>
+        <a href="#contact" onclick="show_hidden_menu()" class="w3-bar-item w3-button">contact</a>
+    </nav>
+
+    <main>
+        <section id="banner" class="w3-container w3-center w3-teal">
+            <img id="profile" class="w3-image w3-circle"
+                    style="width: 200px;"
+                    src="img/avatar.png"/>
+            <p id="brand-name" class="w3-jumbo w3-allerta headline-margin">Hi, I'm John Doe</p>
+            <div class="star-line">
+                <i class="material-icons">start</i>
+                &nbsp;
+                <i class="material-icons">start</i>
+                &nbsp;
+                <i class="material-icons">start</i>
+            </div>
+            <p class="w3-xlarge">Backend Team Leader - Runner - Tech Enthusiast...</p>
+        </section>
+        
+        <section id="portfolio" class="w3-container w3-center w3-padding-48">
+            <p class="w3-xlarge headline-margin headline-font">PORTFOLIO</p>
+            <div class="star-line">
+                <i class="material-icons">start</i>
+            </div>
+
+            <!-- row 1 -->
+            <div class="w3-row-padding w3-content">
+                <div class="w3-col l3 m6 s12" w3-include-html="html/portfolio1.html"></div>
+                <div class="w3-col l3 m6 s12" w3-include-html="html/portfolio2.html"></div>
+                <div class="w3-col l3 m6 s12" w3-include-html="html/portfolio3.html"></div>
+                <div class="w3-col l3 m6 s12" w3-include-html="html/portfolio4.html"></div>
+            </div>
+            
+            <!-- row 2 -->
+            <div class="w3-row-padding w3-content">
+                <div class="w3-col l3 m6 s12" w3-include-html="html/portfolio5.html"></div>
+                <div class="w3-col l3 m6 s12" w3-include-html="html/portfolio6.html"></div>
+                <div class="w3-col l3 m6 s12" w3-include-html="html/portfolio7.html"></div>
+                <div class="w3-col l3 m6 s12" w3-include-html="html/portfolio8.html"></div>
+            </div>
+        </section>
+        
+        <section id="about" class="w3-container w3-center w3-teal w3-padding-48">
+            <p class="w3-xlarge headline-margin headline-font">ABOUT</p>
+            <div class="star-line">
+                <i class="material-icons">start</i>
+            </div>
+            <div class="w3-large w3-content w3-margin-bottom"
+                    style="text-align: justify;"
+                    w3-include-html="html/about_me.html">
+            </div>
+            <button class="w3-button w3-teal w3-border
+                            w3-border-white w3-round-large
+                            w3-padding-large w3-ripple w3-margin-top"
+                    onclick="window.open('cv.html', '_blank')">
+                <b>View my CV</b>
+            </button>
+        </section>
+        
+        <section id="personal_project" class="w3-container w3-center w3-padding-48">
+            <p class="w3-xlarge headline-margin headline-font">PERSONAL PROJECTS</p>
+            <div class="star-line">
+                <i class="material-icons">start</i>
+            </div>
+
+            <div class="w3-row-padding w3-content">
+                <div class="w3-col l3 m6 s12" w3-include-html="html/prj_project1.html"></div>
+                <div class="w3-col l3 m6 s12" w3-include-html="html/prj_project2.html"></div>
+                <div class="w3-col l3 m6 s12" w3-include-html="html/prj_project3.html"></div>
+                <div class="w3-col l3 m6 s12" w3-include-html="html/prj_project4.html"></div>
+            </div>
+        </section>
+        
+        <section id="quote" class="w3-container w3-center w3-teal w3-padding-48">
+            <p class="w3-xlarge headline-margin headline-font">FAVOURITE QUOTES</p>
+            <div class="star-line">
+                <i class="material-icons">start</i>
+            </div>
+            <div class="w3-left-align w3-content">
+                <span style="font-size:150px;line-height:0.6em;opacity:0.2">❝</span>
+                <p class="w3-xlarge" style="margin-top:-40px">
+                    <i>As to methods there may be a million and then some, but principles are few. The man who grasps principles can successfully select his own methods. The man who tries methods, ignoring principles, is sure to have trouble.</i>                    
+                </p>
+                <strong class="w3-xlarge">- Ralph Waldo Emerson</strong>
+            </div>
+        </section>
+        
+        <section id="personal_course" class="w3-container w3-center w3-padding-48">
+            <p class="w3-xlarge headline-margin headline-font">PERSONAL COURSES</p>
+            <div class="star-line">
+                <i class="material-icons">start</i>
+            </div>
+
+            <!-- row 1 -->
+            <div class="w3-row-padding w3-content">
+                <div class="w3-col l4 m6" w3-include-html="html/cse_azure_ai.html"></div>
+                <div class="w3-col l4 m6" w3-include-html="html/cse_software_arch.html"></div>
+                <div class="w3-col l4 m6" w3-include-html="html/cse_web_design.html"></div>
+                <div class="w3-col l4 m6" w3-include-html="html/cse_mobi_ux_design.html"></div>
+                <div class="w3-col l4 m6" w3-include-html="html/cse_scrum.html"></div>
+                <div class="w3-col l4 m6" w3-include-html="html/cse_learninghowtolearn.html"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="w3-container w3-center w3-dark-gray w3-padding-48">
+            <p class="w3-xlarge headline-margin headline-font">CONTACT</p>
+            <div class="star-line">
+                <i class="material-icons">start</i>
+            </div>
+            
+            <div class="w3-container w3-content w3-margin-top">
+
+                <div class="w3-container w3-margin-bottom w3-col l3 m6">
+                    <div class="w3-cell w3-cell-middle">
+                        <img src="img/social_skype.png"/>
+                    </div>
+                    <div class="w3-cell w3-cell-middle w3-left-align">
+                        <div><b>Skype</b></div>
+                        <div><a href="skype:your-skype?chat">your-skype</a></div>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-margin-bottom w3-col l3 m6">
+                    <div class="w3-cell w3-cell-middle">
+                        <img src="img/contact_gmail.png"/>
+                    </div>
+                    <div class="w3-cell w3-cell-middle w3-left-align">
+                        <div><b>Gmail</b></div>
+                        <div><a href="mailto:your_email@gmail.com">your-email</a></div>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-margin-bottom w3-col l3 m6">
+                    <div class="w3-cell w3-cell-middle">
+                        <img src="img/contact_whatsapp.png"/>
+                    </div>
+                    <div class="w3-cell w3-cell-middle w3-left-align">
+                        <div><b>Phone</b></div>
+                        <div><a href="tel:+8491224xxxx">(+84)9l.224.xxxx</a></div>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-margin-bottom w3-col l3 m6">
+                    <div class="w3-cell w3-cell-middle">
+                        <img src="img/contact_location.png"/>
+                    </div>
+                    <div class="w3-cell w3-cell-middle w3-left-align">
+                        <div><b>Location</b></div>
+                        <div>Hoàng Mai, Hà Nội</div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </section>
+    </main>
+
+    <footer class="w3-container w3-center w3-black">
+        <p>Copyright &copy; 2018 - Power by <a href="http://itpro5.com" target="_blank">IT Pro5</a></p>
+    </footer>
+
+    <!-- js script here -->
+    <script src="main.js"></script>
+    <script>
+        includeHTML();
+    </script>
+</body>
+</html>

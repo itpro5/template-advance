@@ -1,0 +1,62 @@
+<!-- project's avatar -->
+<div class="w3-card w3-margin-top">
+    <img src="img/project/circus.png"/>
+    <div class="w3-container">
+        <p>
+            <b>
+                <a href="#modal_pet_project3" target="_self"
+                    onclick="set_element_display('modal_pet_project3', 'block')">
+                    Pet Project 3</a>
+            </b><br/>
+            <em>(From Jan 2018)</em>
+        </p>
+    </div>
+</div>
+
+<!-- project modal detail -->
+<div id="modal_pet_project3" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+        <div class="w3-container w3-center w3-padding-48">
+            <span onclick="set_element_display('modal_pet_project3', 'none')"
+                    class="w3-text-teal w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+                    style="cursor:pointer">
+                    &times;
+            </span>
+            <p class="w3-xlarge"><b>Pet Project 3</b></p>
+            <p>a pet project, <i>From Jan 2018</i></p>
+            
+            <div class="w3-row-padding">
+                <div class="w3-half">
+                    <div class="w3-card">
+                        <p class="w3-teal w3-large">About</p>
+                        <p class="w3-left-align w3-padding">
+                            A video processing Angular Web App for my friend.
+                        </p>
+                    </div>
+                </div>
+                <div class="w3-half w3-margin-bottom">
+                    <div class="w3-card">
+                        <p class="w3-teal w3-large">Roles</p>
+                        <ul class="w3-ul w3-left-align">
+                            <li>Backend developer (working with a frontend guy).</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w3-col w3-margin-bottom">
+                    <div class="w3-card">
+                        <p class="w3-teal w3-large">Leveraged knowledge in</p>
+                        <ul class="w3-ul w3-left-align">
+                            <li>Utilizing video processing library from MATLab;</li>
+                            <li>Consolidating the usage of Dockerfile to automatically pack softwares into Docker image;</li>
+                            <li>Integrating DigitalOcean Spaces Object Storage to store processed vieos that provides high scalability.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class="w3-button w3-teal w3-border w3-border-white w3-round-large w3-padding-large w3-ripple w3-margin-top"
+                    onclick="set_element_display('modal_pet_project3', 'none')">
+                <b>Close</b>
+            </button>
+        </div>
+    </div>
+</div>

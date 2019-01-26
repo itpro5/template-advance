@@ -1,0 +1,45 @@
+i#menu-icon {
+    line-height: 1.5;
+}
+
+img#profile {
+    margin-top: 150px;
+}        
+
+.w3-allerta {
+    font-family: "Allerta Stencil", Sans-serif;
+    font-size: 96px;
+    /* letter-spacing: 0.1em; */
+}
+
+.w3-tangerine {
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+}
+
+div.star-line * {
+    width: 24px;
+}
+
+p.headline-margin {
+    margin: 16px 0;
+}
+
+p.headline-font {
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+#hidden_menu {
+    position: fixed;
+    /* fixed px for nav bar's height */
+    top: 52px;
+}
+
+.w3-card > img {
+    width: 100%;
+}
+
+button {
+    outline: none;
+}
